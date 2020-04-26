@@ -1,6 +1,7 @@
 <p>
 LARAVEL API NOTES
 </p>
+Salut Clément !
 
 ````````
-On oublie le classique npm install  
+On oublie pas le classique npm install  
