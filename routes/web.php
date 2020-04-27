@@ -13,16 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('notes')->group(function () {
+Route::prefix('api')->group(function () {
 
-    Route::post('/', 'postController@insertPost');
+    Route::post('/notes', 'postController@insertPost');
 
-    Route::get('/', 'postController@getPosts');
+    Route::get('/notes', 'postController@getPosts');
 
-    Route::get('/{id}',  'postController@getPost');
+    Route::get('notes/{id}',  'postController@getPost');
 
-    Route::put('/{id}', 'postController@updatePost');
-    Route::patch('/{id}', 'postController@updatePost');
+    Route::put('notes/{id}', 'postController@updatePost');
+    Route::patch('notes/{id}', 'postController@updatePost');
 
     Route::delete('/{id}', 'postController@deletePost');
 });
